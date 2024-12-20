@@ -2,41 +2,33 @@ const form = document.querySelector(".form1");
 console.log(form);
 const userName = form.elements["username"];
 console.log(userName);
-form.addEventListener("submit",validate);
-function validate(event){
+form.addEventListener("submit", validate);
+function validate(event) {
     const nameVal = validateName();
     console.log("inside namevalidation");
-    if(nameVal === false){
-     event.preventDefault();
-     return false;
+    if (nameVal === false) {
+        event.preventDefault();
+        return false;
     }
-    
+
 
 }
 
-function validateName(){
+function validateName() {
     console.log("inside validatename");
-    if(userName.value === ''){
-       alert("Name field cannot be empty");
+    if (userName.value === '') {
+        alert("Name field cannot be empty");
         userName.focus();
         return false;
     }
-    else if(userName.value !== '' && userName.value.length>4){
+    else if (userName.value !== '' && userName.value.length > 4) {
         alert("Please provide name with 4 character");
         userName.focus();
         return false;
     }
 
 }
-var healthProgram = ["Ice Therapy","Heat Therapy","Pediatric Physiotherapy"];
-let ulEl = document.createElement("ul");
-let exEl = document.getElementById("Exercise");
-for(let i=0; i<healthProgram.length; i++){
-    let li = document.createElement("li");
-    ulEl.appendChild(li);
-}
-console.log(ulEl);
-exEl.appendChild(ulEl);
+
 
 
 /*var healthProgram = ["Ice Therapy","Heat Therapy","Pediatric Physiotherapy"];
@@ -74,3 +66,28 @@ healthEl.addEventListener("click",function(event){
     }
      
 })*/
+
+let navEl = document.querySelector("nav");
+console.log(navEl);
+let imgEl = navEl.firstElementChild;
+console.log(imgEl);
+
+imgEl.style.width = "100px";
+let li = document.querySelector(".list");
+console.log(li);
+let subEl = document.getElementById("sub");
+console.log(subEl);
+let wrapEl = document.querySelector(".sub-menu-wrap");
+console.log(wrapEl);
+
+li.addEventListener("click", function (event) {
+    event.preventDefault();
+    subEl.classList.toggle("openMenu");
+    if (subEl.classList.contains("openMenu")) {
+
+        wrapEl.style.overflow = 'visible';
+    }
+    else {
+        wrapEl.style.overflow = 'hidden';
+    }
+})
