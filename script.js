@@ -1,7 +1,8 @@
+//Form validation
 const form = document.querySelector(".form1");
-console.log(form);
+//console.log(form);
 const userName = form.elements["username"];
-console.log(userName);
+//console.log(userName);
 form.addEventListener("submit", validate);
 function validate(event) {
     const nameVal = validateName();
@@ -84,7 +85,7 @@ li.addEventListener("click", function (event) {
     event.preventDefault();
     subEl.classList.toggle("openMenu");
     if (subEl.classList.contains("openMenu")) {
-
+        
         wrapEl.style.overflow = 'visible';
     }
     else {

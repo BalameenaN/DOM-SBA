@@ -3,8 +3,8 @@
     margin-top: 200px;
     margin-left: 100px;
     margin-right: auto;
-    border: 1px solid rgb(173, 141, 51);
-    background: rgb(173, 141, 51);
+    border: 1px solid rgb(248, 226, 164);
+    background: rgb(245, 216, 137);
     width:250px;
     height: 320px;
     border-radius: 8px;
@@ -68,11 +68,18 @@ input{
    
     border: 2px solid grey;
 }
-body{
+body::before{
+    content: "";
+    position: fixed;
     background:grey;
+    background-image: url("background.jpg");
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.3;
+    inset: 0;
 }
 nav{
-    background: rgb(173, 141, 51);
+    background: rgb(245, 216, 137);
     width:100%;
     display:flex;
     height: 70px;
@@ -90,7 +97,7 @@ nav ul li{
 
 nav a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .sub-menu-wrap{
     position: absolute;
@@ -103,7 +110,7 @@ nav a{
 }
 .sub-menu{
     display: flex;
-    background: rgb(173, 141, 51);
+    background: rgb(245, 216, 137);
     padding: 20px;
     position: absolute;
     top: 70px;
@@ -117,6 +124,21 @@ nav a{
     width:100%;
     top: 100px;
    
+}
+
+.footer {
+   
+    position:absolute;
+    bottom: 0px;
     
+}
+.list{
+    background-color:rgb(223, 175, 44) ;
+    padding:2px 2px;
+    border-radius: 5px;
+}
+
+.list:hover{
+    background: rgb(150, 111, 3);
 
 }
