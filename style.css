@@ -6,9 +6,12 @@
     border: 1px solid rgb(248, 216, 216);
     background: rgb(248, 220, 220);
     width:250px;
-    height: 250px;
+    height: 320px;
     border-radius: 8px;
     
+}
+h4{
+    text-align: center;
 }
 
 .form1{
@@ -28,7 +31,7 @@ input{
     padding: 5px 5px;
 
 }
-#btn{
+.button{
 
    
     margin-bottom: 10px;
@@ -69,7 +72,24 @@ img{
     border-radius: 5px;
 }
 .drop{
-    display: block;
+    
+
     background: grey;
     z-index:10;
+}
+#container{
+    display: flex;
+    
+}
+#right{
+    margin-top:200px;
+    margin-left:150px;
+    
+}
+.doctor{
+    margin-left:auto;
+    margin-right:auto;
+    width: 400px;
+   
+    border: 2px solid grey;
 }
