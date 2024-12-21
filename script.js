@@ -90,3 +90,18 @@ li.addEventListener("click", function (event) {
         wrapEl.style.overflow = 'hidden';
     }
 })
+//document Fragmentation
+const fragment = document.createDocumentFragment();
+
+const  uEl = document.getElementById("lastEl");
+for(let i=0; i<=2; i++){
+  let l=  document.createElement("li");
+    fragment.appendChild(l);
+}
+console.log(fragment);
+uEl.appendChild(fragment);
+let firstEl = uEl.firstElementChild;
+firstEl.textContent = "Clinic is closed on saturday and sunday";
+firstEl.nextSibling.textContent = "Patients with appointment only can visit the general care, contact 911 incase of emergency";
+uEl.lastElementChild.textContent = "Visitors must arrive 15 minutes prior to the scheduled appointment time";
+console.log(uEl);
