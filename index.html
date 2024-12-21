@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM-SBA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class ="header">
+        
+    <nav>
+        <img src="main.jpg" alt="fit man image"/>
+        <h4>Physical Therapy Clinic</h4>
+        <ul class="main">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li ><a  class="list">Health Program</a></li>
+        </ul>
+        <div class="sub-menu-wrap">
+            <div class="sub-menu">
+                <ul class="sub-menu-link" id="sub">
+                 <li><a href="#">Manual therapy</a></li>
+                 <li><a href="#">Dry needling</a></li>
+                 <li><a href="#">Floor exercises</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+</div>
+<h1 style="text-align: center;">Welcome to the Physical Therapy Clinic</h1>
+<p style="text-align: center;">Click on the <mark>Health Program menu</mark> to see the treatment offered!</p>
+  <div id="container">
+    <div>
+      <fieldset class="field">
+        <h4>Login</h4>
+        <form class="form1">
+          <label>Name<br>
+            <input type="text" placeholder="Enter name" name="username"></label><br>
+          <label>Email<br>
+            <input type="email" placeholder="Enter email address" name="email" required></label><br>
+          <label>Phone Number<br>
+            <input type="number" placeholder="Enter phone number" name="phone number" required></label><br>
+          <input class="button" type="submit" value="Login">
+        </form>
+      </fieldset>
+    </div>
+    <div id="right">
+      <h4>Check for the doctor's appointment availability before booking(login)</h4>
+        <input class="doctor" type="text" placeholder="Enter the doctor name"></label>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+<p class="footer">&copy; 2024 www.physicaltherapyclinic.com. All rights reserved. </p>
+
+</html>

@@ -1,0 +1,144 @@
+.field{
+    display: block;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: auto;
+    border: 1px solid rgb(248, 226, 164);
+    background: rgb(245, 216, 137);
+    width:250px;
+    height: 320px;
+    border-radius: 8px;
+    
+}
+h4{
+    text-align: center;
+}
+
+.form1{
+    display: block;
+
+}
+
+input{
+    margin-top:5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px;
+    width: 250px;
+    padding: 5px 5px;
+
+}
+.button{
+
+   
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 70px;
+    border-radius: 6px;
+    border: 1px solid rgb(208, 189, 189);
+}
+/*img{
+    width:100px;
+    height:80px;
+    background:rgb(198, 218, 242) ;
+    
+}*/
+
+
+#container{
+    display: flex;
+    justify-content: center;
+    
+}
+#right{
+    margin-top:200px;
+    margin-left:150px;
+    
+}
+.doctor{
+    margin-left:auto;
+    margin-right:auto;
+    width: 400px;
+   
+    border: 2px solid grey;
+}
+body::before{
+    content: "";
+    position: fixed;
+    background:grey;
+    background-image: url("background.jpg");
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.3;
+    inset: 0;
+}
+nav{
+    background: rgb(245, 216, 137);
+    width:100%;
+    display:flex;
+    height: 70px;
+
+}
+nav ul{
+    width:100%;
+    text-align: right;
+}
+nav ul li{
+    display:inline-block;
+    margin:10px 10px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.sub-menu-wrap{
+    position: absolute;
+    top:10px;
+    right:10px;
+    width:200px;
+    /*justify-content: center;*/
+    max-height: 400px;
+    overflow: hidden;
+}
+.sub-menu{
+    display: flex;
+    background: rgb(245, 216, 137);
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    /*margin: 70px;*/
+    justify-content: center;
+}
+
+.sub-menu-link{
+    display:block;
+    text-align: center;
+    width:100%;
+    top: 100px;
+   
+}
+
+.footer {
+   
+    position:absolute;
+    bottom: 0px;
+    
+}
+.list{
+    background-color:rgb(223, 175, 44) ;
+    padding:2px 2px;
+    border-radius: 5px;
+}
+
+.list:hover{
+    background: rgb(150, 111, 3);
+
+}
