@@ -28,43 +28,16 @@ function validateName() {
 
 }
 
+//appointment
+let app = document.getElementById("doc-btn");
+let divEl = document.getElementById("right");
+app.addEventListener("click",function(e){
+     divEl.innerHTML = '';
+     divEl.innerHTML ="<h1>Your appointment is booked!!</h1>"
+     divEl.style.color = "red";
+})
 
 
-/*var healthProgram = ["Ice Therapy","Heat Therapy","Pediatric Physiotherapy"];
-
-let healthEl = document.getElementById("Exercise");
-console.log(healthEl);
-let dropListEl = document.querySelector("#dropList");
-console.log(dropListEl);
-dropListEl.style.top = "100%";
-
-dropListEl.classList.add("drop");
-dropListEl.style.top = 0;
-
-function list(arr){
-    dropListEl.innerHTML = "";
-    arr.forEach(element => {
-        dropListEl.append(element);
-        console.log(dropListEl);
-    });
-
-}
-healthEl.addEventListener("click",function(event){
-    console.log("inside event");
-    console.log(event);
-    //healthEl.classList.remove("active");
-   // event.target.classList.add("active");
-   list(healthProgram);
-    if(dropListEl.style.top == 0){
-        console.log("if");
-        
-        dropListEl.style.top="100%";
-    }
-    else{
-        dropListEl.style.top=0;
-    }
-     
-})*/
 //HealthProgram drop-down menu
 let navEl = document.querySelector("nav");
 console.log(navEl);
