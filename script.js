@@ -11,6 +11,11 @@ function validate(event) {
         event.preventDefault();
         return false;
     }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b461cdaa7432c46c9a925711ee396045b3e84567
 }
 
 function validateName() {
@@ -65,7 +70,11 @@ healthEl.addEventListener("click",function(event){
     }
      
 })*/
+<<<<<<< HEAD
 //HealthProgram drop-down menu
+=======
+
+>>>>>>> b461cdaa7432c46c9a925711ee396045b3e84567
 let navEl = document.querySelector("nav");
 console.log(navEl);
 let imgEl = navEl.firstElementChild;
@@ -89,6 +98,7 @@ li.addEventListener("click", function (event) {
     else {
         wrapEl.style.overflow = 'hidden';
     }
+<<<<<<< HEAD
 })
 //document Fragmentation
 const fragment = document.createDocumentFragment();
@@ -105,3 +115,6 @@ firstEl.textContent = "Clinic is closed on saturday and sunday";
 firstEl.nextSibling.textContent = "Patients with appointment only can visit the general care, contact 911 incase of emergency";
 uEl.lastElementChild.textContent = "Visitors must arrive 15 minutes prior to the scheduled appointment time";
 console.log(uEl);
+=======
+})
+>>>>>>> b461cdaa7432c46c9a925711ee396045b3e84567
