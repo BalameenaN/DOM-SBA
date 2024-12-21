@@ -8,4 +8,4 @@
 - Modified one attribute of an element in response to user interaction.
 - Created different element using **createElement**.
 - Used ** Browser Object Model** (BOM) methods.
-- Use the **parent-child-sibling** relationship to navigate between elements 
+- Use the **parent-child-sibling** relationship to navigate between elements.

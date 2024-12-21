@@ -25,16 +25,15 @@ function validateName() {
         userName.focus();
         return false;
     }
-
 }
 
 //appointment
 let app = document.getElementById("doc-btn");
 let divEl = document.getElementById("right");
-app.addEventListener("click",function(e){
-     divEl.innerHTML = '';
-     divEl.innerHTML ="<h1>Your appointment is booked!!</h1>"
-     divEl.style.color = "red";
+app.addEventListener("click", function (e) {
+    divEl.innerHTML = '';
+    divEl.innerHTML = "<h1>Your appointment is booked!!</h1>"
+    divEl.style.color = "red";
 })
 
 
@@ -56,7 +55,7 @@ li.addEventListener("click", function (event) {
     event.preventDefault();
     subEl.classList.toggle("openMenu");
     if (subEl.classList.contains("openMenu")) {
-        
+
         wrapEl.style.overflow = 'visible';
     }
     else {
@@ -66,9 +65,9 @@ li.addEventListener("click", function (event) {
 //document Fragmentation
 const fragment = document.createDocumentFragment();
 
-const  uEl = document.getElementById("lastEl");
-for(let i=0; i<=2; i++){
-  let l=  document.createElement("li");
+const uEl = document.getElementById("lastEl");
+for (let i = 0; i <= 2; i++) {
+    let l = document.createElement("li");
     fragment.appendChild(l);
 }
 console.log(fragment);
